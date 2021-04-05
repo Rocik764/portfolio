@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/*************************** General ***************************/
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/*************************** Navbar ***************************/
+.navbar {
+  background: rgb(56, 59, 64)
+}
+
+.scroll-link {
+  font-weight: 500;
+  color: #fff;
+  letter-spacing: 0.0375rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
+.scroll-link:hover {
+  color:#037fff !important;
+}
+
+/*************************** Wrappers ***************************/
+
+.day-wrapper {
+  background: rgba(0, 0, 0, .35) url('../src/img/MountainBGday.jpg') no-repeat center fixed;
+  background-blend-mode: darken;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  position: relative;
+  height: 100%;
+  top: 0;
+  padding: 5vh 0 5vh 0;
+}
+
+.night-wrapper {
+  background: rgba(0, 0, 0, .35) url('../src/img/MountainBGnight.jpg') no-repeat center fixed;
+  background-blend-mode: darken;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  position: relative;
+  height: 80vh;
+  top: 0;
+  
+}
+
+.non-bg-wrapper {
+  /* background: rgb(66,66,66);
+  background: linear-gradient(180deg, rgba(66,66,66,1) 0%, rgba(73,73,73,1) 50%, rgba(66,66,66,1) 100%); */
+  background: linear-gradient(#141e30, #243b55);
+  padding: 5vh 0 5vh 0;
+}
+
+.day-wrapper h1 {
+  font-size: 4em;
+  font-weight: 600;
+  color: rgba(0, 0, 0, .75);
+  text-shadow: -2px 4px 1px #404040, -3px 6px 1px #404040, -4px 8px 1px #404040, -5px 10px 1px #404040, -40px -40px 0px rgba(206,89,55,0);
+  color: #131313;
+  border-bottom: 5px solid #404040;
+}
+
+/* .non-animated-part-wrapper h1 {
+  font-size: 4em;
+  font-weight: 600;
+  color: rgba(0, 0, 0, .65);
+  text-shadow: -2px 4px 1px #585858, -3px 6px 1px #585858, -4px 8px 1px #585858, -5px 10px 1px #585858, -40px -40px 0px rgba(206,89,55,0);
+  color: #131313;
+  border-bottom: 5px solid #585858;
+} */
+
+/*************************** Header ***************************/
+.main-info {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  margin: 17em;
+}
+
+@media (max-width: 850px) {
+  .main-info {
+    display: none;
+  }
+}
+
+.main-info h1 {
+  color: #fff;
+}
+
+.typed-text {
+  font-size: 2rem;
+  color: #fff;
+}
+
+#border-header {
+  border: 5px outset #1C6EA4;
+  border-radius: 0px 0px 40px 0px;
+}
+
+.containerxd {
+  top: 10vh;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 2;
+}
+
+/*************************** About me ***************************/
+.about-me-info {
+  position: relative;
+  width: 100%;
+  padding: 20px 20px 20px 20px;
+  background: rgba(0, 0, 0, .35);
+  border-radius: 91% 9% 95% 5% / 7% 85% 15% 93% ;
+  color: white;
+  box-shadow: 20px 20px rgba(0,0,0,.15);
+  transition: all .4s ease;
+  font-family: Georgia, serif;
+  font-size: 24px;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  font-weight: normal;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+}
+
+.about-me-info:hover {
+  border-radius: 84% 16% 98% 2% / 4% 79% 21% 96%;
+  box-shadow: 10px 10px rgba(0,0,0,.25);
+}
+
+/*************************** Projects ***************************/
+.technologies-card {
+  background-color:rgba(0, 0, 0, .25) !important;
+  color: #fff;
+}
+
+.technologies-image {
+  width: 100px;
+  height: 100px;
+}
+
+.test {
+  height: 70vh;
+}
+
+.modal-content { 
+  background-color: #243b55 !important; 
+}
+
+.modal-content p {
+  font-size: 20px; 
+  font-weight: 400;
+}
+
+.modal-header {
+  color: #fff;
+}
+
+/*************************** SVG animations ***************************/
+#cloud-bottom-left {
+  animation: cloud-anim 7s alternate-reverse infinite linear;
+}
+
+#cloud-top-right {
+  animation: cloud-anim 10s alternate-reverse infinite linear;
+}
+
+#cloud-bottom-right {
+  animation: cloud-anim 5s alternate-reverse infinite linear;
+}
+
+#cloud-middle {
+  animation: cloud-anim 13s alternate-reverse infinite linear;
+}
+
+#cloud-top-left {
+  animation: cloud-anim 9s alternate-reverse infinite linear;
+}
+
+@keyframes cloud-anim {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100px);
+  }
+}
