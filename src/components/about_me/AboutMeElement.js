@@ -4,7 +4,7 @@ import { Col } from 'react-bootstrap'
 
 const AboutMeElement = ({ title, description }) => {
   return (
-    <Col className="py-4" lg={6}>
+    <Col className="py-4">
         <Wrapper>
             <Title>{title}</Title>
             <Description>

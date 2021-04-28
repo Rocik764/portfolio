@@ -16,7 +16,7 @@ const AboutMe = () => {
                 <Container>
                     <Row>
                         <Col>
-                        <Title>About</Title>
+                        <Title>About Me</Title>
                         </Col>
                     </Row>
                     <Row>{aboutMe}</Row>

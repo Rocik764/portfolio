@@ -1,12 +1,13 @@
 import React from 'react'
 import { Modal, Carousel } from 'react-bootstrap';
+import '../../App.css';
 
 const ModalDetails = (props) => { 
 
    const details = props.modal.projectDetailsData.map((item) => (
       <Carousel.Item>
-         <img src={item.img} alt="cos"></img>
-         <Carousel.Caption>
+         <img src={item.img} alt="modal-pic"></img>
+         <Carousel.Caption className="project-carousel-desc">
             <h3>{item.title}</h3>
             <p>{item.description}</p>
          </Carousel.Caption>

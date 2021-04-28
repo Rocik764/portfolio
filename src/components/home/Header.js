@@ -10,7 +10,7 @@ const Header = () => {
                             <h1>Hello!</h1>
                                 <Typed
                                     className="typed-text"
-                                    strings={["I'm Simon", "I mainly develop web applications.", "Go ahead and checkout my portfolio!"]}
+                                    strings={["I'm Simon", "I'm a fullstack developer.", "Go ahead and checkout my portfolio!"]}
                                     typeSpeed={30}
                                     backSpeed={20}
                                     loop
@@ -18,21 +18,6 @@ const Header = () => {
                         </div>
                     </div>
                 </div>
-                    {/* <Row>
-                        <Col>
-                            <div className="main-info">
-                            <h1>Hello!</h1>
-                                <Typed
-                                    className="typed-text"
-                                    strings={["I'm Simon", "I mainly develop web applications.", "Go ahead and checkout my portfolio!"]}
-                                    typeSpeed={30}
-                                    backSpeed={20}
-                                    loop
-                                />
-                            </div>
-                        </Col>
-                    </Row> */}
-                {/* <AnimatedSvg/> */}
             </section>
     )
 }
